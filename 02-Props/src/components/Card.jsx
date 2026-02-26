@@ -8,7 +8,7 @@ function Card(props) {
         alt=""
       />
       <h1>{props.user}</h1>
-      <p>{props.intr}</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, velit!</p>
       <button>View Profile</button>
     </div>
   );
