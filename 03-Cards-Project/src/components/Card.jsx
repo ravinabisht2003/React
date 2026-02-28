@@ -1,13 +1,13 @@
 import React from "react";
 import { Bookmark } from "lucide-react";
 
-function Card() {
+function Card(props) {
   return (
     <div className="card">
       <div>
       <div className="top">
         <img
-          src="https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg"
+          src={props.logo}
           alt=""
         />
         <button>
@@ -17,20 +17,20 @@ function Card() {
 
       <div className="center">
         <h3>
-          Amazon <span>5 days ago</span>
+          {props.company} <span>{props.posted}</span>
         </h3>
-        <h2>Senior UI/UX Designer</h2>
+        <h2>{props.post}</h2>
         <div className="tag">
-          <h4>Part-time</h4>
-          <h4>Senior Level</h4>
+          <h4>{props.tag1}</h4>
+          <h4>{props.tag2}</h4>
         </div>
       </div>
       </div>
 
       <div className="bottom">
         <div>
-            <h3>$120/hr</h3>
-            <p>Mumbai, India</p>
+            <h3>{props.pay}</h3>
+            <p>{props.location}</p>
         </div>
             <button>Apply Now</button>
       </div>
