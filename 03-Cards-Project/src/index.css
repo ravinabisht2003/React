@@ -10,6 +10,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: #111;
+    
+    
 }
 
 .parent{
@@ -19,10 +21,11 @@ body {
   padding: 30px;
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; 
+  
+} 
 
-.card{
+ .card{
   height: 330px;
   width: 280px;
   background-color: #fff;
@@ -31,7 +34,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} 
+
 .card .top{
   display: flex;
   align-items: flex-start;
@@ -60,9 +64,13 @@ body {
 }
 
 
+
+
 .center h3{
   font-size: 16px;
   font-weight: 500;
+  padding: 0;
+  text-align: start;
 }
 .center h3 span{
   font-size: 9px;
@@ -73,6 +81,9 @@ body {
 .center h2{
   font-size: 21px;
   font-weight: 500;
+  padding: 0;
+  text-align: start;
+  
 
 }
 .center .tag{
