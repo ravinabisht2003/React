@@ -1,18 +1,48 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'helvetica neue';
+    
 }
 html,
 body {
     height: 100%;
     width: 100%;
-    /* background-color: #111;        */
+}
+.Nav-Menu{
+  height: 100vh;           
+  width: 100%;
+  background-image: url("./assets/TopBgImg.png"); 
+  background-size: cover;        
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+
 .Navbar{
-  background-image: url("./assets/TopBgImg.png");
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.Navbar-top img{
+    height: 25%;
+    width: 25%;
+}
+
+.Navbar-nav ul{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.Navbar-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: large;
 }
