@@ -1,9 +1,11 @@
 import React from 'react'
 
+import BottomBgImg from '../assets/BottomBgImg.png'
+
 function Navbar() {
   return (
     <div className='Navbar'>
-        <img src="" alt="" />
+        
       
     </div>
   )
