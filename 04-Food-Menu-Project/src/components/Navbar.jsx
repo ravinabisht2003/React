@@ -1,6 +1,8 @@
 import React from "react";
 
 import Logo from "../assets/Logo.png";
+import {Search} from 'lucide-react'
+import {ChevronDown} from 'lucide-react'
 
 function Navbar() {
   return (
@@ -37,6 +39,17 @@ function Navbar() {
     <div className="Navbar-Other">
       <h1>Find Your Food</h1>
       <h1>Delivered Fresh & hot</h1>
+      <p>You can order delivery. Order catering and book <br/>a table as you wish at your nearest location </p>
+      <div className="Nav-Srch">
+        <div className="Nav-Srch-Left">
+        <div><Search /></div>
+        <input name="text" type="text" placeholder="find nearest food here"/>
+        </div>
+        <div className="Nav-Srch-Right">
+          <div>set location</div>
+          <div><ChevronDown /></div>
+        </div>
+      </div>
     </div>
 
     </div>
