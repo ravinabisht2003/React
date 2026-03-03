@@ -31,6 +31,7 @@ body {
   justify-content: space-between;  
   align-items: center;
   margin-bottom: 5rem;
+  
 }
 
 .Navbar-top img{
@@ -65,7 +66,7 @@ body {
 .Navbar-nav a:hover{
     cursor: pointer;
     background-color: white;
-    color: rgb(18, 145, 145);
+    color: rgb(14, 160, 201);
     border-radius: 10px;
 }
 
@@ -75,7 +76,7 @@ body {
 
  h1{
     font-weight: 900;
-    color: rgb(30, 105, 138);
+    color: rgb(14, 160, 201);
     font-size : 50px;
 }
 
@@ -100,7 +101,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: rgb(30, 105, 138);
+    color: rgb(14, 160, 201);
 }
 
 .Nav-Srch-Left input{
@@ -109,11 +110,11 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: rgb(30, 105, 138);
+    color: rgb(14, 160, 201);
 }
 
 .Nav-Srch-Left input::placeholder{
-    color: rgb(30, 105, 138);
+    color: rgb(14, 160, 201);
 }
 
 .Nav-Srch-Right{
@@ -125,7 +126,7 @@ body {
 
 .Service-Menu{
     text-align: center;
-    padding-top: 5px;
+    padding-top: 35px;
 }
 
 .Service-Menu h4{
@@ -133,5 +134,51 @@ body {
     color: rgb(98, 95, 95);
     font-weight: bolder;
     font-size: large;
+    margin-bottom: 5rem;
 }
+
+.Service-icons{
+    color: rgb(14, 160, 201);
+    
+}
+
+.Service-Container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem 10rem 10rem;
+  margin-top: 50px;
+
+  
+}
+.Service{
+  flex: 1;
+  text-align: center;
+  width: 300px;  
+  
+}
+
+.Service-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.Service button{
+    margin-top: 2rem;
+    padding: 10px 2rem 10px 2rem;
+    background-color: rgb(14, 160, 201);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
 
