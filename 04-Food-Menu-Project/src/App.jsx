@@ -41,7 +41,7 @@ const foodItems = [
   {
     name: "Spaghetti Bolognese",
     category: "Noodle",
-    image: "/images/spaghetti.jpg",
+    image: "https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg",
     price: 4.99,
     comments: 156,
     location: "Jakarta, Indonesia",
@@ -49,7 +49,7 @@ const foodItems = [
   {
     name: "Cheese Burger",
     category: "Burger",
-    image: "/images/burger.jpg",
+    image: "https://cdn.uengage.io/uploads/29124/image-1217-1772275890.jpg",
     price: 5.25,
     comments: 156,
     location: "Jakarta, Indonesia",
@@ -57,7 +57,7 @@ const foodItems = [
   {
     name: "Pizza Pepperoni",
     category: "Pizza",
-    image: "/images/pizza.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg",
     price: 4.99,
     comments: 156,
     location: "Jakarta, Indonesia",
@@ -65,7 +65,7 @@ const foodItems = [
   {
     name: "Japanese Ramen",
     category: "Noodle",
-    image: "/images/ramen.jpg",
+    image: "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2024-03-tonkotsu-ramen%2Ftonkotsu-ramen-195",
     price: 4.99,
     comments: 156,
     location: "Jakarta, Indonesia",
@@ -73,7 +73,7 @@ const foodItems = [
   {
     name: "Hot Dog",
     category: "Bread",
-    image: "/images/hotdog.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHeLkcqgOn3kYqsOfP0m7pfCNh2OOQXuL4hg&s",
     price: 4.99,
     comments: 156,
     location: "Jakarta, Indonesia",
@@ -164,7 +164,14 @@ const foodItems = [
       </div>
 
        <div className="Food-Menu">
-        <Food/>
+        {foodItems.map(function(elem, indx){
+          return(
+            <div key={indx}>
+                <Food img={elem.image}/>
+            </div>
+          )
+        })}
+        
 
       </div>
     </div>

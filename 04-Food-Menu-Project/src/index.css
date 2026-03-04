@@ -226,6 +226,35 @@ body {
     cursor: pointer;
 }
 
+.Food-Menu{
+  min-height: 20vh;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; 
+  padding: 2rem 1rem 1rem 3rem;
+  align-items: center;
+
+}
+
+.Food-Name{
+    border: 1px solid black;
+    width: 335px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Food-Name img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  padding: 3px;
+  object-fit: cover;
+  
+}
 
 
 
