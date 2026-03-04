@@ -66,7 +66,7 @@ body {
 .Navbar-nav a:hover{
     cursor: pointer;
     background-color: white;
-    color: rgb(14, 160, 201);
+    color: blue;
     border-radius: 10px;
 }
 
@@ -76,7 +76,7 @@ body {
 
  h1{
     font-weight: 900;
-    color: rgb(14, 160, 201);
+    color: blue;
     font-size : 50px;
 }
 
@@ -101,7 +101,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: rgb(14, 160, 201);
+    color: blue;
 }
 
 .Nav-Srch-Left input{
@@ -110,11 +110,11 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: rgb(14, 160, 201);
+    color: blue;
 }
 
 .Nav-Srch-Left input::placeholder{
-    color: rgb(14, 160, 201);
+    color: blue;
 }
 
 .Nav-Srch-Right{
@@ -138,7 +138,7 @@ body {
 }
 
 .Service-icons{
-    color: rgb(14, 160, 201);
+    color: blue;
     
 }
 
@@ -147,7 +147,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10rem 10rem 10rem;
-  margin-top: 50px;
+  margin-top: 7rem;
 
   
 }
@@ -168,12 +168,63 @@ body {
 .Service button{
     margin-top: 2rem;
     padding: 10px 2rem 10px 2rem;
-    background-color: rgb(14, 160, 201);
+    background-color: blue;
     border: none;
     border-radius: 20px;
     color: white;
 }
 
+.Menu{
+    padding: 1rem 5rem 1rem 3rem;
+}
+
+.Menu-Tit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Menu-Search-Tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 5px 1px 5px;
+}
+
+.Menu-Search{
+    display: flex;
+    gap: 15px;
+    color: blue;
+}
+
+.Menu-Search input{
+    background-color: transparent;
+    border: none;
+}
+
+.Menu-dtls{
+    display: flex;
+    gap: 130px;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.Menu-Dtls-Name{
+    display: flex;
+    align-items: center;
+    color: rgb(89, 87, 84);
+    
+}
+
+.Menu-Dtls-Name:hover{
+    color: blue;
+    cursor: pointer;
+}
 
 
 

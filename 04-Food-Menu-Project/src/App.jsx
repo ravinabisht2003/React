@@ -3,7 +3,8 @@ import "./App.css";
 import OrderMenu from "./components/OrderMenu";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service";
-import { Truck, Utensils, Armchair } from "lucide-react";
+import { Truck, Utensils, Armchair,SquaresIntersect,Tag,Soup,Hamburger,Pizza,Cookie,Wheat,GlassWater } from "lucide-react";
+import {Search,CircleEqual} from 'lucide-react'
 
 function App() {
   const services = [
@@ -23,6 +24,17 @@ function App() {
       description: "Book a table for your family set number of person & arrange the event enjoy without worrying overcrowded",
     },
   ];
+
+   const categories = [
+  { name: "All", icon: <SquaresIntersect /> },
+  { name: "Disc", icon: <Tag />},
+  { name: "Rice", icon: <Wheat />},
+  { name: "Burger", icon: <Hamburger /> },
+  { name: "Pizza", icon: <Pizza /> },
+  { name: "Bread", icon: <Cookie /> },
+  { name: "Noodle", icon: <Soup/> },
+  { name: "Drink", icon: <GlassWater /> },
+];
 
   return (
     <div className="Order-Menu">
@@ -58,11 +70,32 @@ function App() {
         
 
       </div>
+
       <div className="Menu">
-        <OrderMenu />
+
+      <div className="Menu-Tit">
+      <h1>Our Meals</h1>
+      <div className="Menu-Search">
+        <div className="Menu-Search-Tag">
+        <input type="text" name="text" id="text" placeholder="search by name" />
+        <div><Search size={15}/></div>
+      </div>
+      <div><CircleEqual /></div>
+      </div>
+      </div>
+      <div className="Menu-dtls">
+        {categories.map(function(elem, indx){
+          return(
+            <div key={indx}>
+            <OrderMenu name={elem.name} icon = {elem.icon} />
+            </div>
+          )
+        })}
+        
+      </div>
       </div>
     </div>
   );
-}
+} 
 
 export default App;

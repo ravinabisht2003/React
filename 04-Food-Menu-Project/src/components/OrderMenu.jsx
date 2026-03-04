@@ -1,9 +1,11 @@
 import React from 'react'
 
-function OrderMenu() {
+function OrderMenu(props) {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="Menu-Dtls-Name">
+      <div>{props.icon}</div>
+      <div>{props.name}</div>
+      
     </div>
   )
 }
