@@ -3,6 +3,7 @@ import "./App.css";
 import OrderMenu from "./components/OrderMenu";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service";
+import Bottom from './components/Bottom'
 import {
   Truck,
   Utensils,
@@ -201,6 +202,10 @@ function App() {
           })}
         </div>
         <button>View More</button>
+      </div>
+
+      <div className="Bottom">
+        <Bottom/>
       </div>
     </div>
   );
