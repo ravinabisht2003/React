@@ -7,14 +7,17 @@ function Food(props) {
         
         <img src={props.img} alt="" />
         
-        <div>
-            <div>Name</div>
+        <div className='Food-Tit'>
+            <div>{props.name}</div>
             <div><Heart size={28} color="#cf2029" strokeWidth={3} /></div>
         </div>
-        <div>***** <span>156 comments</span></div>
-        <div>
-            <div><MapPin size={28} strokeWidth={1.25} /></div>
-            <div>$4.99</div>
+        <div className='Food-Commnt'>***** <span>{props.comments} comments</span></div>
+        <div className='Food-LocPrice'>
+            <div className='Food-Loc'>
+            <div><MapPin size={15} strokeWidth={1.25} /></div>
+            <div className='Food-Loc-Addr'>{props.location}</div>
+            </div>
+            <div className='Food-Price'>${props.price}</div>
         </div>
       
     </div>

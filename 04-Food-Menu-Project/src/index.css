@@ -146,7 +146,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10rem 10rem 10rem;
+  padding: 0 10rem 5rem 10rem;
   margin-top: 7rem;
 
   
@@ -207,8 +207,8 @@ body {
 
 .Menu-dtls{
     display: flex;
-    gap: 130px;
-    /* justify-content: center; */
+    gap: 100px;
+    justify-content: center;
     align-items: center;
     margin-top: 2rem;
 
@@ -226,6 +226,10 @@ body {
     cursor: pointer;
 }
 
+.Food-Menu-Dtls{
+    text-align: center;
+}
+
 .Food-Menu{
   min-height: 20vh;
   width: 100%;
@@ -233,16 +237,19 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap; 
-  padding: 2rem 1rem 1rem 3rem;
+  padding: 2rem 1rem 3rem 3rem;
   align-items: center;
+  justify-content: center;
 
 }
 
+
+
 .Food-Name{
     border: 1px solid black;
-    width: 335px;
+    width: 290px;
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     border-radius: 20px;
 }
 
@@ -253,7 +260,57 @@ body {
   border: 1px solid #dadada;
   padding: 3px;
   object-fit: cover;
-  
+}
+
+.Food-Tit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.Food-Commnt{
+    color: blue;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.Food-Commnt span{
+    font-size: 10px;
+    align-items: center;
+    color: rgb(131, 127, 127);
+}
+
+.Food-LocPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Food-Loc{
+    display: flex;
+    align-items: center;
+    color: #beb7b7;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.Food-Price{
+    color: red;
+}
+
+.Food-Menu-Dtls button{
+    padding: .5rem 3rem .5rem 3rem;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+    text-align: center;
+
 }
 
 
