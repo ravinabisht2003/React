@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Service from "./components/Service";
 import { Truck, Utensils, Armchair,SquaresIntersect,Tag,Soup,Hamburger,Pizza,Cookie,Wheat,GlassWater } from "lucide-react";
 import {Search,CircleEqual} from 'lucide-react'
+import Food from "./components/Food";
 
 function App() {
   const services = [
@@ -34,6 +35,73 @@ function App() {
   { name: "Bread", icon: <Cookie /> },
   { name: "Noodle", icon: <Soup/> },
   { name: "Drink", icon: <GlassWater /> },
+];
+
+const foodItems = [
+  {
+    name: "Spaghetti Bolognese",
+    category: "Noodle",
+    image: "/images/spaghetti.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Cheese Burger",
+    category: "Burger",
+    image: "/images/burger.jpg",
+    price: 5.25,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Pizza Pepperoni",
+    category: "Pizza",
+    image: "/images/pizza.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Japanese Ramen",
+    category: "Noodle",
+    image: "/images/ramen.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Hot Dog",
+    category: "Bread",
+    image: "/images/hotdog.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Fried Chicken",
+    category: "All",
+    image: "/images/fried-chicken.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Spicy Macaroni",
+    category: "Noodle",
+    image: "/images/macaroni.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
+  {
+    name: "Special Fried Rice",
+    category: "Rice",
+    image: "/images/fried-rice.jpg",
+    price: 4.99,
+    comments: 156,
+    location: "Jakarta, Indonesia",
+  },
 ];
 
   return (
@@ -93,6 +161,11 @@ function App() {
         })}
         
       </div>
+      </div>
+
+       <div className="Food-Menu">
+        <Food/>
+
       </div>
     </div>
   );
