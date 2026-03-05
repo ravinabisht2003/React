@@ -1,0 +1,8 @@
+.btn{
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: blue;
+    font-size: 30px;
+    font-weight: 800;
+}
