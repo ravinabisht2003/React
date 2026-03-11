@@ -39,8 +39,8 @@ const App = () => {
 
   return (
     <div>
-      <Section1 user={users}/>
-      <Section2/>
+      <Section1 users={users}/>
+      {/* <Section2/> */}
     </div>
   )
 }
