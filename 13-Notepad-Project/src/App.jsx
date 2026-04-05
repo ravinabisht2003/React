@@ -11,7 +11,6 @@ function App() {
     console.log(title, details);
     setTitle("")
     setDetails("")
-    
   }
 
   return (
