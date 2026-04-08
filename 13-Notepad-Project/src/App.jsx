@@ -23,8 +23,15 @@ function App() {
     setDetails("");
   };
 
+  const deleteNote = (idx)=>{
+    const copyTask = [...task];
+    copyTask.splice(idx,1);
+    setTask(copyTask)
+
+  }
+
   return (
-    <div className="bg-black text-white h-screen lg:flex ">
+    <div className="bg-black text-white h-screen lg:flex  ">
       <form
         onSubmit={(e) => {
           formHandler(e);
@@ -47,7 +54,7 @@ function App() {
         <textarea
           name="text"
           placeholder="Write Details"
-          className="px-5 w-full font-medium py-2 border-2 outline-none rounded"
+          className="px-5 w-full font-medium py-2 border-2 outline-none rounded col-auto"
           value={details}
           onChange={(e) => {
             setDetails(e.target.value);
@@ -75,7 +82,9 @@ function App() {
                     {elem.details}
                   </p>
                 </div>
-                <button className="w-full py-2 bg-red-600 text-white text-xs rounded cursor-pointer active:scale-95 font-bold">Delete</button>
+                <button onClick={()=>{
+                  deleteNote(idx)
+                }} className="w-full py-2 bg-red-600 text-white text-xs rounded cursor-pointer active:scale-95 font-bold">Delete</button>
               </div>
             );
           })}
